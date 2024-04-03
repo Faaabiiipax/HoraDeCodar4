@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <script>
+
+var estudantes = []; // Array para armazenar os nomes dos estudantes
+
+// Loop para cadastrar estudantes
+while (true) {
+    var nome = prompt("Digite o nome do estudante (ou 'PARE' para finalizar):");
+    // Verificar se o usuário digitou "PARE" para finalizar
+    if (nome.toUpperCase() === "PARE") {
+        break; // Sai do loop se o usuário digitar "PARE"
+    } else {
+        estudantes.push(nome); // Adiciona o nome do estudante ao array
+    }
+}
+
+// Exibir a quantidade de estudantes cadastrados
+console.log("Quantidade de estudantes cadastrados: " + estudantes.length);
+
+// Exibir a lista de estudantes cadastrados
+console.log("Lista de estudantes:");
+for (var i = 0; i < estudantes.length; i++) {
+    console.log((i + 1) + ". " + estudantes[i]);
+}
+
+    </script>
+</body>
+</html>

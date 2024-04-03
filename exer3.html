@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+</head>
+<body>
+    
+    <script>
+        var frutas = ["Maça", "Banana", "Morango"];
+
+        while (frutas.length > 0) {
+            var digfrut = prompt("Digite o nome de uma fruta:");
+
+            if (frutas.includes(digfrut)) {
+                var indice = frutas.indexOf(digfrut);
+                frutas.splice(indice, 1);
+                alert("Fruta foi retirada da lista.");
+            } else {
+                alert("Fruta indisponível no nosso mercado.");
+            }
+        }
+
+        alert("Lista de compras finalizada.");
+    </script>
+</body>
+</html>
